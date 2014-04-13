@@ -1,0 +1,67 @@
+[
+   { 
+		"caption": "Preferences",
+		"mnemonic" : "n",
+      "id" : "preferences",
+      "children":
+      [
+         {
+            "caption": "Package Settings",
+            "mnemonic": "P",
+            "id": "package-settings",
+            "children":
+            [
+               {
+                  "caption": "mailCheck",
+                  "children" : 
+                  [
+                     
+                     
+                     {
+                        "caption": "Settings",
+                        "command": "open_file", "args":
+                        {
+                           "file": "${packages}/mailCheck/checkMail.sublime-settings"
+                        }
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+	},
+   {
+      "caption": "ST Bundles",
+      "mnemonic" : "B",
+      "id" : "plugins",
+      "children" :
+      [
+         {
+            "caption": "mailCheck",
+            "mnemonic" : "m",
+            "id" : "mailCheck",
+            "children":
+            [
+               {
+                  "caption" : "open latest mail",
+                  "id" : "latestMail",
+                  "command" : "email",
+                  "mnemonic" : "o"
+               },
+               {
+                  "caption" : "select folder",
+                  "id" : "select",
+                  "command" : "select_imap_folder",
+                  "mnemonic" : "s"
+               },
+               {
+                  "caption" : "logout",
+                  "id" : "logout",
+                  "command" : "logout",
+                  "mnemonic" : "l"
+               }
+            ] 
+         }      
+      ]
+   }
+]
