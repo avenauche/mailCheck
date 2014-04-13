@@ -1,0 +1,5 @@
+[
+    { "caption": "mailCheck: open latest mail", "command": "email"},
+    { "caption": "mailCheck: select folder", "command": "select_imap_folder"},
+    { "caption": "mailCheck: logout", "command": "logout"}
+]
